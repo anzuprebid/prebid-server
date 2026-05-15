@@ -1,0 +1,11 @@
+aliasOf: "anzu ssp"
+endpoint: "http://endpoint.anzumarketplace.com/pserver"
+maintainer:
+  email: "prebid@anzu.io"
+userSync:
+  redirect:
+    url: "https://endpoint.anzumarketplace.com/pbserver?gdpr={{.GDPR}}&gdpr_consent={{.GDPRConsent}}&us_privacy={{.USPrivacy}}&gpp={{.GPP}}&gpp_sid={{.GPPSID}}&redir={{.RedirectURL}}"
+    userMacro: "[UID]"
+  iframe:
+    url: "https://endpoint.anzumarketplace.com/pbserverIframe?gdpr={{.GDPR}}&gdpr_consent={{.GDPRConsent}}&us_privacy={{.USPrivacy}}&gpp={{.GPP}}&gpp_sid={{.GPPSID}}&pbserverUrl={{.RedirectURL}}"
+    userMacro: "[UID]"
